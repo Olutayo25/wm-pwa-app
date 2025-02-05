@@ -1,0 +1,201 @@
+/* src/global.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+.main-page {
+  flex: 1; /* Allow the main content to grow and push the footer to the bottom */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #a00;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.form-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Supplier Name and Invoice Number Fields */
+.supplier-invoice-row {
+  display: flex;
+  gap: 10px; /* Space between fields */
+}
+
+.supplier-field,
+.invoice-field {
+  flex: 1; /* Both fields take equal space */
+}
+
+/* Quantity and Unit Fields */
+.quantity-unit-row {
+  display: flex;
+  gap: 1%;
+}
+
+.quantity-field {
+  flex: 2; /* Quantity field takes more space */
+}
+
+.unit-field {
+  flex: 0.2; /* Unit field takes less space */
+}
+
+.unit-field select {
+  width: 100%; /* Ensure the select field takes full width */
+}
+
+.main-footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  flex-shrink: 0; /* Prevent the footer from shrinking */
+  margin-top: auto;
+}
+
+.main-footer p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+button {
+  background-color: #a00;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.submissions-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.submissions-list li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* src/global.css */
+/* Existing styles... */
+
+/* Menu Container */
+.menu-container {
+  position: relative;
+}
+
+/* Menu Icon */
+.menu-icon {
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+}
+
+/* Dropdown Menu */
+.menu-dropdown {
+  position: absolute;
+  top: 40px; /* Adjust based on header height */
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 200px;
+}
+
+/* Menu Items */
+.menu-item {
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.menu-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Status Indicator */
+.menu-status {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+  color: #333;
+}
+
+.menu-status svg {
+  margin-right: 8px;
+}
